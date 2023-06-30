@@ -1,0 +1,98 @@
+:root{
+    --primaryColor : #41644A;
+    --secondaryColor : #E5F9DB;
+
+    --mainFont: 'Open Sans', sans-serif;
+    --headingFont:  'Merriweather', serif;
+    --heading: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: var(--mainFont);
+}
+
+.heading{
+    font-family: var(--headingFont);
+    font-size: 24px;
+    font-weight: 700;
+}
+.subheading{
+    font-weight: 300;
+}
+
+/* login */
+.from-login{
+    background-color: var(--primaryColor) !important;
+
+}
+
+/* navbar */
+.navbar-brand{
+    font-family: var(--headingFont);
+    font-weight: 900;
+}
+
+.navbar{
+    background-color: var(--primaryColor) !important;
+}
+
+.navbar-brand span{
+    color: var(--secondaryColor);
+}
+
+.nav-link {
+    font-family: var(--headingFont);
+}
+
+.nav-link.active{
+    font-weight: 700;
+    color: white;
+}
+
+.nav-link.active:hover{
+    color:var(--secondaryColor) !important; ;
+}
+
+/* home */
+.home{
+    background-color: var(--primaryColor);
+    height: 600px;
+    padding-top: 10px;
+}
+
+.home .heading{
+    color: var(--secondaryColor);
+    padding-top: 160px;
+}
+
+.btn-home .btn-pengaduan{
+    border: 2px solid var(--secondaryColor);
+    color: var(--secondaryColor);
+    font-family: var(--headingFont);
+    font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+    .home{
+        padding-top: 14px;
+    }
+
+    .home .heading{
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .home .heading{
+        font-size: 44px;
+    }
+
+    .home .subheading{
+        font-size: 20px;
+        font-family: var(--heading);
+    }
+
+    .home img{
+        padding-top: 110px;
+    }
+}
